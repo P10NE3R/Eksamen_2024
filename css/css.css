@@ -1,0 +1,90 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    
+    form{
+        padding-top:0.87rem ;
+        input{
+            border-radius: 1rem;
+            height: 1.6rem;
+        }
+
+    }
+    
+    
+
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+    
+            li{
+                a{
+                color: black;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+    
+}
+
+
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    
+    
+   
+    
+    section{
+        width: 30%;
+    }
+
+     #logo {
+        width: 100%;
+        p{
+            text-decoration: solid;
+        }
+        
+    }
+
+
+    #some{
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                
+            }
+        }
+    } 
+    
+    ul{
+        list-style: none;
+        
+
+        li{
+            
+            a{
+            color: black;
+            text-decoration: none;
+            }
+        }
+
+}
+}
