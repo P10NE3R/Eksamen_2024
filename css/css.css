@@ -84,22 +84,30 @@ header {
 
 
 
-#banner .scrollcontainer{
+#banner .scroll-container{
     display: flex;
-   gap:1rem;
-   overflow: scroll;
+    gap:1rem;
+    overflow: scroll;
 }
 
-#banner .scrollcontainer article {
-    min-width: 250px;
+#banner .scroll-container article {
+    min-width: 500px;
+    background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/processor.jpg");
+    width: 15rem;
+    
+    border-radius: 1rem;
 }
 
 
 
 
 #produkter{
-    
-
+    display: flex;
+    gap: 0.5rem;
+    padding:1rem;
+    h1 p{
+        width: 100%;
+    }
     ul{
         display: flex;
         
