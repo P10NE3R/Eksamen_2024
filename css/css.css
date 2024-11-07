@@ -26,8 +26,9 @@ ul{
 
 
 header {
-    
-   
+    border: none;
+    display: flex;
+    align-content: center;
     text-decoration: none;
     
     form{
