@@ -1,13 +1,27 @@
 
+
+
+/*Globalt utseende*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 2rem;
 }
 
 
+
+
+
+ul{
+    list-style: none;
+}
+
+
+
+
 header {
-    display: flex;
-    flex-wrap: wrap;
+    
+   
     text-decoration: none;
     
     form{
@@ -25,12 +39,12 @@ header {
     nav{
         display: flex;
         flex-wrap: wrap;
-
+        width: 100%;
+        
         ul{
-            list-style: none;
             display: flex;
             gap: 1rem;
-    
+
             li{
                 a{
                 color: black;
@@ -41,6 +55,86 @@ header {
     }
     
 }
+
+
+
+
+#produkter{
+    
+
+
+
+    ul{
+        display: flex;
+        
+        li{
+            padding:1rem;
+            border-radius: 2rem;
+            background-color: bisque;
+        }
+    }
+}
+
+#kategorier{
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr;
+    padding: 1rem;
+
+    article{
+        border-radius: 1rem;
+        background-color: aquamarine;
+    }
+
+    h2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row:1/2 ;
+    }
+
+    p{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row:2/3 ;
+    }
+
+    #category1{
+        grid-column-start: 1;
+        grid-column-end:2 ;
+        grid-row: 3/4;
+        background-image:url(processor.jpg);
+    }
+    #category2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row:3/4;
+    }
+
+    #category3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row:3/5;
+
+    #category4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row:4/6;
+        
+    }
+
+    #category5{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row:5/6;
+        height: 300px;
+    }
+
+}
+
+}
+
+
+
 
 
 footer{
@@ -68,6 +162,7 @@ footer{
         ul{
             display: flex;
             flex-wrap: wrap;
+            
             li{
                 
             }
@@ -75,7 +170,7 @@ footer{
     } 
     
     ul{
-        list-style: none;
+        
         
 
         li{
