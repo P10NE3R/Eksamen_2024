@@ -26,8 +26,10 @@ ul{
 header {
     border: none;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     text-decoration: none;
+    margin-bottom:2.5rem;
     
     form{
         padding-top:0.87rem ;
@@ -44,14 +46,28 @@ header {
     nav{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        min-width: 100%;
         
         i:hover{
             transform:scale(1.5);
             transition: 0.8s ease-in;
         }
+
+
+        label{
+           
+           
+            i{
+                position: absolute;
+                margin-left: 10.8rem;  
+                margin-top: 0.29rem; 
+            }
+        }
+
+
         ul{
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
             
             
@@ -73,15 +89,53 @@ header {
 }
 
 
+/* Stor skjerm */
+@media only schreen and (min-width:1920px){
+    
+}
+
+/*Vanlig desktop*/
+@media only schreen and (min-width:800px){
+    
+}
+
+/*Mobil*/
+@media only schreen and (max-width:800px){
+    main{
+        display: flex;
+        flex-wrap:wrap ;
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
 #banner{
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+    height: 20rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    height: 20rem;
-    width: 47rem;
+   
     
     
 }
+
+
+
+
+
+
+
 
 
 
@@ -90,15 +144,23 @@ header {
     gap:1rem;
     overflow: scroll;
     border-radius: 1rem;
+    
 
 }
 
 #banner .scroll-container article {
-    min-width: 500px;
-    background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/leaves.jpg");
-    width: 20rem;
-    
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/15/06/29/pot-marigold-6625895_960_720.jpg");
     border-radius: 1rem;
+
+    p,h2{
+
+
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
 }
 
 
@@ -106,18 +168,35 @@ header {
 
 #produkter{
     
-    gap: 0.5rem;
-    padding:1rem;
-    h1{
+    width: 100%;
+    
+
+    
+    h2,p{
         width: 100%;
+        text-align: center;
     }
+    
     ul{
+        padding-left:0;
+        max-width: 100%;
         display: flex;
         
+        li :hover {
+            background-color:rgb(73, 73, 73) ;
+            color: white;
+        }
+
         li{
-            padding:1rem;
+            width: 30%; 
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+
+            
             border-radius: 2rem;
-            background-color: bisque;
+            border:0.1px solid black;
+            
             border-color: black;
         }
     }
@@ -126,12 +205,11 @@ header {
 #kategorier{
     display: grid;
     grid-template-columns: 1fr,1fr,1fr;
-    grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr,1fr,1fr;
     
 
-    article{
+    article {
         border-radius: 1rem;
-        background-color: aquamarine;
         background-size: cover;
         margin:0.3rem;
 
@@ -139,18 +217,23 @@ header {
             color: white;
         }
 
+        
+
+
     }
 
     h2{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row:1/2 ;
+        text-align: center;
     }
 
     p{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row:2/3 ;
+        text-align: center;
     }
 
     #category1{
@@ -158,7 +241,7 @@ header {
         grid-column-end:2 ;
         grid-row: 3/4;
         height:11.7rem;
-        background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/processor.jpg");
+        background-image: url("https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg");
         align-content: center;
         text-align:center;
     }
@@ -168,14 +251,14 @@ header {
         grid-row:3/4;
         align-content: center;
         text-align:center;
-        background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/port.jpg");
+        background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
     }
 
     #category3{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row:3/5;
-        background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/mac.jpg");
+        background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
         align-content: center;
         text-align:center;
     }
@@ -186,7 +269,7 @@ header {
         height: 20rem;
         align-content: center;
         text-align:center;
-        background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/engineer.jpg");
+        background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
     }
 
     #category5{
@@ -196,7 +279,7 @@ header {
         height: 11.7rem;
         align-content: center;
         text-align:center;
-        background-image: url("/Users/isachoie/Documents/GitHub/Sandbox/Eksamen_2024/bilder/microscope.jpg");
+        background-image: url("https://cdn.pixabay.com/photo/2014/09/07/22/15/industry-438428_1280.jpg");
     }
 
 }
