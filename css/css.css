@@ -105,7 +105,7 @@ header {
     display: flex;
     gap: 0.5rem;
     padding:1rem;
-    h1 p{
+    h1{
         width: 100%;
     }
     ul{
