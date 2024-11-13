@@ -10,6 +10,9 @@ body{
     
 }
 
+*{
+    box-sizing: border-box;
+}
 
 
 
@@ -24,12 +27,13 @@ ul{
 
 
 header {
-    border: none;
+    
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     text-decoration: none;
     margin-bottom:2.5rem;
+    
     
     form{
         padding-top:0.87rem ;
@@ -47,6 +51,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         min-width: 100%;
+        justify-content: space-between;
         
         i:hover{
             transform:scale(1.5);
@@ -168,38 +173,84 @@ header {
 
 #produkter{
     
-    width: 100%;
     
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    header{
+        margin: 0px;
+        min-width: 100%;
+        h2,p{
+            width: 100%;
+            text-align: center; 
+        }
+            
+        ul{
+            padding-left:0;
+            min-width: 100%;
+            display: flex;
+            
+            justify-content: center;
+          
 
-    
-    h2,p{
-        width: 100%;
-        text-align: center;
-    }
-    
-    ul{
-        padding-left:0;
-        max-width: 100%;
-        display: flex;
+            li{
+                width: 30%; 
+                padding: 1rem;
+                margin: 1rem;
+                text-align: center;
+
+                
+                border-radius: 2rem;
+                border:0.1px solid black;
+                
+                border-color: black;
+            }
         
-        li :hover {
-            background-color:rgb(73, 73, 73) ;
-            color: white;
+            }       
+}
+
+
+
+
+
+    .product-card {
+        max-width: 30%;
+        padding: 0px;
+        img{
+            border-radius: 1rem;
+            max-width: 100%;
         }
+        
+        .product-info{
+            ul{
+                padding:0px;
+                display: flex;
+                flex-wrap: wrap;
+                gap:1rem;
+                
+                ul{
+                    padding:  0px;
+                }
 
-        li{
-            width: 30%; 
-            padding: 1rem;
-            margin: 1rem;
-            text-align: center;
+                li{
+                    align-content: center;
+                    padding: 0px;
+                    font-size: x-small;
+                    h3{
+                        font-size: x-small;
+                    }
 
-            
-            border-radius: 2rem;
-            border:0.1px solid black;
-            
-            border-color: black;
+                    i{
+                        font-size: small;
+                    }
+                }
+            }
         }
     }
+
+
+
+
 }
 
 #kategorier{
