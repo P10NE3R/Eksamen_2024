@@ -5,8 +5,8 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    padding: 2rem;
-    margin:1rem;
+   margin: 0.8rem;
+   
     
 }
 
@@ -34,7 +34,7 @@ header {
     justify-content: center;
     text-decoration: none;
     margin-bottom:2.5rem;
-    
+  
     
 
     
@@ -66,7 +66,8 @@ header {
             padding-top:0.87rem ;
             input{
                 border-radius: 1rem;
-                height: 1.6rem;
+                height: 2rem;
+                width: 15rem;
             }
     
 
@@ -82,26 +83,32 @@ header {
            
             i{
                 position: absolute;
-                margin-left: 9rem;  
-                margin-top: 0.29rem; 
+                margin-left: 13rem;  
+                margin-top: 0.5rem; 
             }
         }
 
 
         ul{
             text-align : center;
-            gap: 2rem;
+            gap: 1rem;
             padding: 0px;
-            
-
+            line-height: 2rem;
+           
             a:hover{
                 text-decoration: underline;
             }
 
             li{
+
                 a{
                 color: black;
                 text-decoration: none;
+                
+                i{
+                    font-size: large;
+                }
+    
                 
                 }
             }
@@ -151,7 +158,7 @@ header {
 #banner .scroll-container article {
     min-width: 100%;
     min-height: 100%;
-    background-image: url("https://cdn.pixabay.com/photo/2021/09/15/06/29/pot-marigold-6625895_960_720.jpg");
+    background-image: url("C:\Users\47940\OneDrive\Dokumenter\GitHub\Eksamen_2024\bilder\processor.jpg");
     border-radius: 1rem;
 
     p,h2{
@@ -159,6 +166,16 @@ header {
 
         display:flex;
         flex-wrap: wrap;
+    }
+
+    a{
+    
+        border-radius: 2rem;
+        border:0.1px solid black;
+        padding: 0.7rem;
+        color: black;
+        background-color: white;
+        text-decoration: none;
     }
     
 }
@@ -171,10 +188,11 @@ header {
     
     display: flex;
     flex-wrap: wrap;
-    gap:1rem;
+    
     header{
         margin: 0px;
         min-width: 100%;
+        padding-bottom: 2.5rem;
         h2,p{
             width: 100%;
             text-align: center; 
@@ -184,21 +202,33 @@ header {
             padding-left:0;
             min-width: 100%;
             display: flex;
-            
+            gap: 0.7rem;
             justify-content: center;
           
 
             li{
-                width: 30%; 
-                padding: 1rem;
-                margin: 1rem;
+                
+                width: 20%; 
+                
+                padding-top: 1rem;
+                padding-bottom:1rem;
                 text-align: center;
 
-                
+                font-size: small;
                 border-radius: 2rem;
                 border:0.1px solid black;
                 
-                border-color: black;
+                
+            }
+
+            li:hover{
+                color: white;
+                background-color: gray;
+            }
+
+            #new-product{
+                color: white;
+                background-color: rgb(46, 46, 46);
             }
         
             }       
@@ -209,7 +239,7 @@ header {
 
 
     .product-card {
-        max-width: 30%;
+        max-width: 100%;
         padding: 0px;
         img{
             border-radius: 1rem;
@@ -217,26 +247,33 @@ header {
         }
         
         .product-info{
+            .name-price{
+                padding-bottom: 1rem;
+                gap: 60%;
+                }
+            }
             ul{
                 padding:0px;
                 display: flex;
                 flex-wrap: wrap;
-                gap:1rem;
+                width: 100%;
+                gap:0.5rem;
                 
                 ul{
                     padding:  0px;
+                    
                 }
-
+                
                 li{
                     align-content: center;
                     padding: 0px;
-                    font-size: x-small;
+                    font-size: small;
                     h3{
-                        font-size: x-small;
+                        font-size: large;
                     }
 
                     i{
-                        font-size: small;
+                        font-size: large;
                     }
                 }
             }
@@ -246,89 +283,72 @@ header {
 
 
 
-}
-
-#kategorier{
-    display: grid;
-    grid-template-columns: 1fr,1fr,1fr;
-    grid-template-rows: 1fr,1fr,1fr,1fr,1fr;
-    
-
-    article {
-        border-radius: 1rem;
-        background-size: cover;
-        margin:0.3rem;
-
-        h3{
-            color: white;
-        }
-
+    #kategorier{
         
-
-
+        
+    
+        article {
+            border-radius: 1rem;
+            background-size: cover;
+            margin:0.7rem;
+            width: 100%;
+            h3{
+                color: white;
+            }
+    
+            
+    
+    
+        }
+    
+        h2{
+            
+            text-align: center;
+        }
+    
+        p{
+           
+            text-align: center;
+        }
+    
+        #category1{
+            
+            height: 11.7rem;
+            background-image: url("https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg");
+            align-content: center;
+            text-align:center;
+        }
+        #category2{
+            height: 11.7rem;
+            align-content: center;
+            text-align:center;
+            background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
+        }
+    
+        #category3{
+            height: 11.7rem;
+            background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
+            align-content: center;
+            text-align:center;
+        }
+    
+        #category4{
+            height: 11.7rem;
+            align-content: center;
+            text-align:center;
+            background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
+        }
+    
+        #category5{
+            height: 11.7rem;
+            align-content: center;
+            text-align:center;
+            background-image: url("https://cdn.pixabay.com/photo/2014/09/07/22/15/industry-438428_1280.jpg");
+        }
+    
     }
 
-    h2{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row:1/2 ;
-        text-align: center;
-    }
 
-    p{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row:2/3 ;
-        text-align: center;
-    }
-
-    #category1{
-        grid-column-start: 1;
-        grid-column-end:2 ;
-        grid-row: 3/4;
-        height:11.7rem;
-        background-image: url("https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg");
-        align-content: center;
-        text-align:center;
-    }
-    #category2{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row:3/4;
-        align-content: center;
-        text-align:center;
-        background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
-    }
-
-    #category3{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row:3/5;
-        background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
-        align-content: center;
-        text-align:center;
-    }
-
-    #category4{
-        grid-column: 1/3;
-        grid-row:4/6;
-        height: 20rem;
-        align-content: center;
-        text-align:center;
-        background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
-    }
-
-    #category5{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row:5/6;
-        height: 11.7rem;
-        align-content: center;
-        text-align:center;
-        background-image: url("https://cdn.pixabay.com/photo/2014/09/07/22/15/industry-438428_1280.jpg");
-    }
-
-}
 
 
 
@@ -343,7 +363,7 @@ footer{
     flex-wrap:wrap;
     
     section{
-        width: 30%;  
+        width: 50%;  
         }
 
     
@@ -401,78 +421,111 @@ footer{
 @media only screen and (min-width:1000px){
     header {
         
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        text-decoration: none;
-        margin-bottom:2.5rem;
-        
-        
-        
-        form{
-            
+        form{ 
             max-width:fit-content;
             justify-content: left;
             
-            padding-top:0.87rem ;
-            input{
-                border-radius: 1rem;
-                height: 1.6rem;
-            }
-    
+
         }
 
-
-        
-      
-    
-    
         nav{
             display: flex;
             flex-wrap: wrap;
-            min-width: 100%;
             justify-content: space-between;
-            
-            #cart:hover{
-                transform:scale(1.5);
-                transition: 0.8s ease-in;
-            }
-    
-    
-            label{
-               
-               
-                i{
-                    position: absolute;
-                    margin-left: 9rem;  
-                    margin-top: 0.29rem; 
-                }
-            }
-    
-    
+        
+        
             ul{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 2rem;
-                
-                
-    
-                a:hover{
-                    text-decoration: underline;
-                }
-    
-                li{
-                    a{
-                    color: black;
-                    text-decoration: none;
-                    
-                    }
                 }
             }
         }
+    
+        #kategorier{
+            display: grid;
+            grid-template-columns: 1fr,1fr,1fr;
+            grid-template-rows: 1fr,1fr,1fr,1fr,1fr;
+            
         
+            article {
+                border-radius: 1rem;
+                background-size: cover;
+                margin:0.3rem;
+        
+                h3{
+                    color: white;
+                }
+        
+                
+        
+        
+            }
+        
+            h2{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row:1/2 ;
+                text-align: center;
+            }
+        
+            p{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row:2/3 ;
+                text-align: center;
+            }
+        
+            #category1{
+                grid-column-start: 1;
+                grid-column-end:2 ;
+                grid-row: 3/4;
+                height:11.7rem;
+                background-image: url("https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg");
+                align-content: center;
+                text-align:center;
+            }
+            #category2{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row:3/4;
+                align-content: center;
+                text-align:center;
+                background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
+            }
+        
+            #category3{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row:3/5;
+                background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
+                align-content: center;
+                text-align:center;
+            }
+        
+            #category4{
+                grid-column: 1/3;
+                grid-row:4/6;
+                height: 20rem;
+                align-content: center;
+                text-align:center;
+                background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
+            }
+        
+            #category5{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row:5/6;
+                height: 11.7rem;
+                align-content: center;
+                text-align:center;
+                background-image: url("https://cdn.pixabay.com/photo/2014/09/07/22/15/industry-438428_1280.jpg");
+            }
+        
+        }
     }
     
+
     
-}
+
 
