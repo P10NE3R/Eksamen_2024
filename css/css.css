@@ -6,12 +6,13 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 2rem;
-    margin:5rem;
+    margin:1rem;
     
 }
 
 *{
     box-sizing: border-box;
+    padding:0px;
 }
 
 
@@ -30,33 +31,50 @@ header {
     
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     text-decoration: none;
     margin-bottom:2.5rem;
     
     
-    form{
-        padding-top:0.87rem ;
-        input{
-            border-radius: 1rem;
-            height: 1.6rem;
-        }
 
-    }
     
     
 
 
     nav{
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 100%;
-        justify-content: space-between;
         
-        i:hover{
+        min-width: 100%;
+
+        
+        
+        #cart:hover{
             transform:scale(1.5);
             transition: 0.8s ease-in;
         }
+
+       #nav-icons{
+            display: flex;
+            justify-content: center;
+       }
+
+        form{
+            display: flex;
+            width:100%;
+            justify-content: center;
+            
+            
+            padding-top:0.87rem ;
+            input{
+                border-radius: 1rem;
+                height: 1.6rem;
+            }
+    
+
+            
+            
+            
+        }
+
 
 
         label{
@@ -64,17 +82,16 @@ header {
            
             i{
                 position: absolute;
-                margin-left: 10.8rem;  
+                margin-left: 9rem;  
                 margin-top: 0.29rem; 
             }
         }
 
 
         ul{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            
+            text-align : center;
+            gap: 2rem;
+            padding: 0px;
             
 
             a:hover{
@@ -95,28 +112,6 @@ header {
 
 
 /* Stor skjerm */
-@media only schreen and (min-width:1920px){
-    
-}
-
-/*Vanlig desktop*/
-@media only schreen and (min-width:800px){
-    
-}
-
-/*Mobil*/
-@media only schreen and (max-width:800px){
-    main{
-        display: flex;
-        flex-wrap:wrap ;
-    }
-    
-
-
-
-
-}
-
 
 
 
@@ -339,28 +334,38 @@ header {
 
 
 
-
+.bold{
+    font-weight:  bold;
+}
 
 footer{
     display: flex;
     flex-wrap:wrap;
     
-    
-   
-    
     section{
-        width: 30%;
-        
-        
-    }
+        width: 30%;  
+        }
 
-     #logo {
+    
+    #tilgang{
+        ul{
+            padding:0px;
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5rem;
+        }
+       
+    }
+    
+    
+        .logo {
         width: 100%;
         p{
+            width: 100%;
             text-decoration: solid;
+         }
+    
         }
-        
-    }
 
 
     #some{
@@ -371,13 +376,10 @@ footer{
             gap: 1rem;
             
         }
-    } 
+     } 
     
    
     ul{
-       
-        
-
         li{
             
             a{
@@ -385,6 +387,92 @@ footer{
             text-decoration: none;
             }
         }
+    }
+}
 
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1000px){
+    header {
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        text-decoration: none;
+        margin-bottom:2.5rem;
+        
+        
+        
+        form{
+            
+            max-width:fit-content;
+            justify-content: left;
+            
+            padding-top:0.87rem ;
+            input{
+                border-radius: 1rem;
+                height: 1.6rem;
+            }
+    
+        }
+
+
+        
+      
+    
+    
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            justify-content: space-between;
+            
+            #cart:hover{
+                transform:scale(1.5);
+                transition: 0.8s ease-in;
+            }
+    
+    
+            label{
+               
+               
+                i{
+                    position: absolute;
+                    margin-left: 9rem;  
+                    margin-top: 0.29rem; 
+                }
+            }
+    
+    
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                
+                
+    
+                a:hover{
+                    text-decoration: underline;
+                }
+    
+                li{
+                    a{
+                    color: black;
+                    text-decoration: none;
+                    
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
 }
-}
+
