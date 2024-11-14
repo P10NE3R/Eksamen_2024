@@ -18,7 +18,7 @@
                 <nav>
                     <form>
                         <label>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
                             <input type="search" placeholder="søk her" id="search">
                         </label>
                     </form>
@@ -52,9 +52,9 @@
                     <div class="scroll-container">
                         
                         <article id="slider1">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do . Ut enim ad minim</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus feugiat suscipit. Morbi ornare felis ut urna dictum, non iaculis 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus feugiat suscipit. 
                                 
                             </p>
                             <a href="#">Les mer</a>
@@ -92,9 +92,10 @@
                         </ul>
                     </header>
                     <article class="product-card">
-                        <img src="bilder\leaf.jpg" alt="new product category">
+                        <a class="heart"><i class="fa-regular fa-heart"></i>
+                        <img src="bilder/leaf.jpg" alt="new product category">
+                        </a>
                         <ul class="product-info">
-                            <ul class="name-price">
                                 <li>
                                     <h3>Product name</h3>
                                 </li>
@@ -110,18 +111,17 @@
                                 <li><i class="fa-regular fa-star"></i></li>
                                 <li class="bold">842 Reviews</li>
                             </ul>
-                           
-                        </ul>
                     </article>
 
                     <article class="product-card">
-                        <img src="bilder\leaf.jpg" alt="new product category">
+                        <a class="heart"><i class="fa-regular fa-heart"></i>
+                        <img src="bilder/leaf.jpg" alt="new product category">
+                        </a>
                         <ul class="product-info">
-                            <ul class="name-price">
                                 <li>
                                     <h3>Product name</h3>
                                 </li>
-                                <li class="price">
+                                <li id="price">
                                     kr 1999
                                 </li>
                             </ul>
@@ -130,20 +130,20 @@
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
-                                <li class="fa-regular fa-star"></li>
-                                <li>842 Reviews</li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li class="bold">842 Reviews</li>
                             </ul>
-                           
-                        </ul>
                     </article>
+
                     <article class="product-card">
-                        <img src="bilder\leaf.jpg" alt="new product category">
+                        <a class="heart"><i class="fa-regular fa-heart"></i>
+                        <img src="bilder/leaf.jpg" alt="new product category">
+                        </a>
                         <ul class="product-info">
-                            <ul class="name-price">
                                 <li>
                                     <h3>Product name</h3>
                                 </li>
-                                <li>
+                                <li id="price">
                                     kr 1999
                                 </li>
                             </ul>
@@ -152,26 +152,20 @@
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
                                 <li><i class="fa-solid fa-star"></i></li>
-                                <li class="fa-regular fa-star"></li>
-                                <li>842 Reviews</li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li class="bold">842 Reviews</li>
                             </ul>
-                           
-                        </ul>
                     </article>
-
-
-                </section>
-
-             
             </section>
 
             
 
 
                 <section id="kategorier">
-                    <h2>Våre mest populære kategorier</h2>
-                    <p>Oppdag det beste av det beste</p>
-                    
+                    <header>
+                        <h2>Våre mest populære kategorier</h2>
+                        <p>Oppdag det beste av det beste</p>
+                    </header>
                     <article id="category1">
                         <h3>CATEGORY1</h3>
                     </article>
@@ -196,12 +190,75 @@
 
 
                 </section>
+            
+            
+            
+             <section id="reviews" >
+                <h2>Anmeldelser</h2>
+                <div class="scroll-container">
+                    
+                    <article class="review">
+                        <img src="https://picsum.photos/id/41/100/100" alt="skrivebord">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                           
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus feugiat suscipit. Morbi ornare felis ut urna dictum, non iaculis 
+                            
+                        </p>
+                        
+                    </article>
+
+                    <article class="review">
+                        <img src="https://picsum.photos/id/41/100/100" alt="skrivebord">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                           
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus feugiat suscipit. Morbi ornare felis ut urna dictum, non iaculis 
+                            
+                        </p>
+                        
+                    </article>
+
+                    <article class="review">
+                        <img src="https://picsum.photos/id/41/100/100" alt="skrivebord">
+                        <h3>Lorem Ipsum</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                           
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus feugiat suscipit. Morbi ornare felis ut urna dictum, non iaculis 
+                            
+                        </p>
+                        
+                    </article>
+                    
+                </div>
+            </section>
+            
+            
+            
             </main>
             
-            <aside id="Anmeldelser">
-                <h3>Anmeldelser</h3>
-                
-            </aside>
+           
 
 
             <footer  id="footer">
@@ -212,7 +269,7 @@
 
 
                 <section id="tilgang">
-                    <h3>Kontakt</h3>
+                    <h3>KONTAKT</h3>
                     <ul>
                         <li><i class="fa-solid fa-location-dot"></i></li>
                         <li class="bold">Adresse:</li>
@@ -242,9 +299,9 @@
                 
             
 
-                <section>
-                    <h3>Snarveier</h3>
-                    <ul>
+                <section >
+                    <h3>SNARVEIER</h3>
+                    <ul id="snarveier">
                         <li>Produkter</li>
                         <li>Kategorier</li>
                         <li>Kontakt oss</li>
@@ -257,7 +314,7 @@
 
 
                 <section id="some">
-                    <h3>Sosiale Medier</h3>
+                    <h3>SOSIALE MEDIER</h3>
                     <ul>
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
