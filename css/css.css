@@ -16,11 +16,90 @@ body{
     padding:0px;
 }
 
-
+.list-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 ul{
     list-style: none;
+}
+
+
+#produkt-side{
+    margin:0.2rem;
+    nav{
+        
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.8rem;
+            li{
+                a{
+                    font-style: none;
+                    color: black;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+    }
+    #produkt-oversikt{
+        
+       
+    }
+    
+    #produkt-bilder{
+        
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr,1fr;
+        max-width:100;
+
+        #img1{
+            grid-column:1/2;
+            grid-row: 1/2;
+            width:6rem;
+            height:7rem;
+            margin-left:0.8rem
+            
+            
+        }
+        
+        #img2{
+            grid-column:1/2;
+            grid-row: 2/3; 
+            width:6rem;
+            height:7rem;
+            margin-left:2%;
+            margin-top:0.725rem;
+            
+            
+         }
+         #img3{
+            grid-column:1/2;
+            grid-row: 3/4;
+            width:67px;
+            width:6rem;
+            height:7rem;
+            margin-left:0.8rem;
+            margin-botom:0rem;
+             margin-top:0.725rem;
+            
+         }
+         #img4{
+            grid-column:2/4;
+            grid-row: 1/4; 
+            max-width:14.75rem;
+            height:22.5rem;  
+         }
+
+    }
+    
+    
 }
 
 
@@ -42,10 +121,7 @@ header {
 
         
         
-        #cart:hover{
-            transform:scale(1.5);
-            transition: 0.8s ease-in;
-        }
+        
 
        #nav-icons{
             display: flex;
@@ -75,8 +151,8 @@ header {
 
         label{
             i{
-                position: absolute;
-                top: 2.18rem;
+                position: rleative;
+                top: 7.18rem;
                 left: 19rem;
             }
         }
@@ -88,9 +164,7 @@ header {
             padding: 0px;
             line-height: 2rem;
            
-            a:hover{
-                text-decoration: underline;
-            }
+            
 
             li{
 
@@ -252,7 +326,10 @@ header {
         padding: 0px;
       
         
-        a{
+            a{
+                i:hover{
+                    background-color:#d35e5e;
+                }
           
                 i{
                    color: white;
@@ -406,7 +483,7 @@ header {
         width:100%;
         padding:0.5rem;
         min-width:70%;
-        min-height:1000%;
+        height:500px;
     }
     
     ul{
@@ -500,19 +577,23 @@ footer{
 
 
 
-
+@media only screen and (min-width:500px){
 
 
 
 
 @media only screen and (min-width:1000px){
+    body{
+        margin-right:10rem;
+        margin-left:10rem;
+    }
     header {
         
         form{ 
             max-width:fit-content;
             justify-content: left;
-            
-
+            margin-bottom:3rem;
+            margin-top:1rem;
         }
 
          #magnifying-glass{
@@ -524,22 +605,30 @@ footer{
             flex-wrap: wrap;
             justify-content: space-between;
             
+            #cart:hover{
+                transform:scale(1.5);
+                transition: 0.8s ease-in;
+            }
            
         
             ul{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 2rem;
+                
+                a:hover{
+                    text-decoration: underline;
                 }
+            }
             }
         }
     
 
         #produkter{
-    
-    
+            
             display: flex;
             flex-wrap: wrap;
+            
             
             header{
                 margin: 0px;
@@ -591,7 +680,7 @@ footer{
         
         
         .product-card {
-            max-width: 33%;
+            max-width: 32%;
             padding: 0px;
             
            
@@ -617,7 +706,7 @@ footer{
         
         
                 }
-                
+                                                
             
             
     
@@ -760,10 +849,7 @@ footer{
     }
     footer{
         justify-content:space-between;
+        margin-left:1rem;
+        margin-right:1rem;
     }
 }
-
-
-    
-
-

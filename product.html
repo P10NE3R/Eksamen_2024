@@ -13,66 +13,151 @@
     </head>
 
     <body>
-            <header>
-                <nav>
-                    <form>
-                        <label>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search" placeholder="søk her" id="search">
-                        </label>
-                    </form>
-                    <ul>
-                        <li>
-                            <a href="index.html">Hjem</a>
-                        </li>
-                        <li>
-                            <a href="product.html">Produkter</a>
-                        </li>
-                        <li>
-                            <a href="#">Logo</a>
-                        </li>
-                        <li>
-                            <a href="#footer">Om oss</a>
-                        </li>
-                        <li>
-                            <a href="product.html">Kontakt oss</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><i class="fa-regular fa-user"></i></li>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><a href="checkout"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    </ul>
-                </nav>
-             </header>
-            
+        <header>
+            <nav>
+                <form>
+                    <label>
+                        <i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="søk her" id="search">
+                    </label>
+                </form>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <a href="product.html">Produkter</a>
+                    </li>
+                    <li>
+                        <a class="logo" href="#">Logo</a>
+                    </li>
+                    <li>
+                        <a href="footer">Om oss</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt oss</a>
+                    </li>
+                </ul>
+                <ul id="nav-icons">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><a href="cart.html"><i id="cart" class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <main id="produkt-side">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </li>
+                    <li>
+                        <a href="index.html">Kategori</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </li>
+                    <li>
+                        <a class="bold" href="index.html">Produktnavn</a>
+                    </li>
+                
+                
+            </nav>
+            <section id="produkt-bilder">
+                <img id="img1" src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+                <img id="img2" src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+                <img id="img3" src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+                <img id="img4" src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+            </section>
+
+            <section id="produkt-oversikt">
+                <ul>
+                    <li><h2>Pruduktnavn</h2></li>
+                    <li>Merkenavn</li>
+                    <li>6 325 kr onkl. mva.</li>
+                </ul>
+                <ul class="list-flex">
+                    <li>Farge: </li>
+                    <li class="bold">Beige</li>
+                </ul>
+                <ul class="list-flex">
+                    <li class="bold">Matriale og vedlikehold</li>
+                    <li><li><i class="fa-solid fa-plus"></i></li></li>
+                </ul>
+                <ul class="list-flex">
+                    <li class="bold">Produktdetaljer</li>
+                    <li><li><i class="fa-solid fa-plus"></i></li></li>
+                </ul>
+                <ul class="list-flex">
+                    <li class="bold">Størrelsestabell</li>
+                    <li><li><i class="fa-solid fa-plus"></i></li></li>
+                </ul>
+                <ul class="list-flex">
+                    <li class="bold">Anmeldelser</li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li>32</li>
+                </ul>
+
+            </section>
+        </main>
+
+        
+
+
+
+
          
-
-
-            <footer  id="footer">
-                <section id="logo">
+        <footer  id="footer">
+                <section class="logo">
                     <p >Logo</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                 </section>
 
 
-                <section>
-                    <h3>Kontakt</h3>
+                <section id="tilgang">
+                    <h3>KONTAKT</h3>
                     <ul>
-                        <li>Adresse: Lorem</li>
-                        <li>Telefon: 995673452</li>
-                        <li>E-post: lorem@ipsum.com</li>
-                        <li>Åpningstider: 09/17</li>
+                        <li><i class="fa-solid fa-location-dot"></i></li>
+                        <li class="bold">Adresse:</li>
+                        <li>Lorem</li>
+                    </ul>
+                    
+                    
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i></li>
+                        <li class="bold">Telefon:</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i></li>
+                        <li class="bold">E-post:</li>
+                        <li>lorem@ipsum.com</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><i class="fa-solid fa-clock"></i></li>
+                        <li class="bold">Åpningstider:</li>
+                        <li>Stenger 15:00</li>
                     </ul>
                 </section>
                     
-                f
+                
             
 
-                <section>
-                    <h3>Snarveier</h3>
-                    <ul>
-                        <li>Producter</li>
+                <section >
+                    <h3>SNARVEIER</h3>
+                    <ul id="snarveier">
+                        <li>Produkter</li>
                         <li>Kategorier</li>
                         <li>Kontakt oss</li>
                     </ul>
@@ -84,7 +169,7 @@
 
 
                 <section id="some">
-                    <h3>Sosiale Medier</h3>
+                    <h3>SOSIALE MEDIER</h3>
                     <ul>
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
@@ -92,9 +177,7 @@
                         <li><i class="fa-brands fa-pinterest-p"></i></li>
                     </ul>
                 </section>
-
-
-            </footer>
+        </footer>
     </body>
 
 
