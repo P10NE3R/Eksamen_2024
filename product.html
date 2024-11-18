@@ -12,7 +12,7 @@
         <title>Lorem Slipsum</title>
     </head>
 
-    <body>
+    <body id="produkt-side">
         <header>
             <nav>
                 <form>
@@ -47,8 +47,8 @@
         </header>
         
         
-        <main id="produkt-side">
-            <nav>
+        <main >
+            <nav id="nav-produkt-produktside">
                 <ul>
                     <li>
                         <a href="index.html">Hjem</a>
@@ -57,13 +57,13 @@
                         <i class="fa-solid fa-greater-than"></i>
                     </li>
                     <li>
-                        <a href="index.html/#kategorier">Kategorier</a>
+                        <a href="index.html/#kategorier">Kategori</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-greater-than"></i>
                     </li>
-                    <li>
-                        <a class="bold" href="#">Produktnavn</a>
+                    <li class="bold">
+                        <a href="#">Produktnavn</a>
                     </li>
                 </ul>
                 
@@ -77,36 +77,68 @@
             </section>
 
             <section id="produkt-oversikt">
-                <ul>
+                <ul id="navn-pris-merkenavn">
                     <li><h2>Pruduktnavn</h2></li>
-                    <li>Merkenavn</li>
-                    <li>6 325 kr onkl. mva.</li>
+                    <li id="merkenavn">Merkenavn</li>
+                    <li>6 325 kr inkl. mva.</li>
                 </ul>
-                <ul class="list-flex">
+                <ul class="flex-list">
                     <li>Farge: </li>
-                    <li class="bold">Beige</li>
+                    <li class="bold"> beige</li>
                 </ul>
-                <ul class="list-flex">
-                    <li class="bold">Matriale og vedlikehold</li>
-                    <li><li><i class="fa-solid fa-plus"></i></li>
+                
+                <form>
+                    <label for="size"></label>
+                    <select id="size" name="size" >
+                        <option value="small">Velg størrelse</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <input type="submit" value="Legg til i handlekurv">
+                    <button id="lik-produkt"><i class="fa-regular fa-heart"></i></button>
+                </form>
+
+                
+
+
+
+
+                <ul class="lik-handlekurv-knapper">
+        
+                    
+                    <li></li>
                 </ul>
-                <ul class="list-flex">
+
+                
+                <ul class="filled-list">
+                    <li class="bold">Materiale og vedlikehold</li>
+                    <li><details>noe greier lorem ipsum<summary></summary></details></li>
+                </ul>
+                
+                <ul class="filled-list">
                     <li class="bold">Produktdetaljer</li>
-                    <li><i class="fa-solid fa-plus"></i><details>noe greier lorem ipsum<summary></summary></details></li>
+                    <li><details>noe greier lorem ipsum<summary></summary></details></li>
                 </ul>
-                <ul class="list-flex">
+                <ul class="filled-list">
                     <li class="bold">Størrelsestabell</li>
-                    <li><li><i class="fa-solid fa-plus"></i></li>
+                    <li><details>noe greier lorem ipsum<summary></summary></details></li>
                 </ul>
-                <ul class="list-flex">
-                    <li class="bold">Anmeldelser</li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                    <li>32</li>
-                </ul>
+                
+                
+                <div  id="anmeldelser-container">
+                    <h3>Anmeldelser</h3>
+                    <ul class="stjerner">
+                        
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li>32</li>
+                    </ul>
+                </div>
+               
 
             </section>
         </main>
@@ -115,10 +147,8 @@
 
 
 
-
-         
         <footer>
-            <section >
+            <section id="logo-and-p">
                 <a class="logo" href="index.html">Logo</a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
             </section>
@@ -178,7 +208,9 @@
                     <li><i class="fa-brands fa-pinterest-p"></i></li>
                 </ul>
             </section>
-        </footer>
+        </footer>    
+         
+        
     </body>
 
 
