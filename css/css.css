@@ -192,6 +192,65 @@ ul{
     text-decoration: none;
 }
 
+
+
+#handlekurv{
+    
+    
+    #shoppingbagen_din{
+        
+        
+        h2{
+            min-width: 100%;
+            
+        }
+
+        h3{
+            margin: 0px;
+        }
+        img{
+            max-height:15rem;
+            max-width: 12rem;
+        }
+        
+        #button-list{
+            display:flex;
+                button{
+                    padding:0.5rem;
+                    max-height: 2.5rem;
+                    background-color: white;
+                    border-color:white ;
+                    border:none;
+                }
+                
+            
+        }
+       form{
+
+            select{
+                    max-width:16%;
+                    background-color: gray;
+                    padding:1rem;
+                }
+            input{
+                    max-width:16%;
+                   padding:1rem;
+                }
+            
+
+            
+            
+
+            }
+       
+        
+        
+    }
+}
+
+
+
+
 #produkt-side{
     
     #nav-produkt-produktside{
