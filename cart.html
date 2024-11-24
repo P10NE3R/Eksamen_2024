@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link rel="stylesheet" href="ikoner/css/solid.css">
         <link rel="stylesheet" href="ikoner/css/regular.css">
@@ -48,14 +48,9 @@
             
          <main id="handlekurv">
                 <header>
-                    <h2>Våre mest populære produkter</h2>
-                    <p>Oppdag det beste av det beste</p>
-                    
-                    <ul>
-                        <li id="new-product">New Product</li>
-                        <li>Special Price</li>
-                        <li>Best Sellers</li>
-                    </ul>
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a>
+                    <h1 class="text-middle">Kasse</h1>
+
                 </header>
        
        
@@ -68,21 +63,23 @@
                         <li>Farge: beige</li>
                     </ul>
                     <form>
-                        <label for="Størrelse">Størrelse</label>
+                        
                         <select name="size" >
                            
                             <option value="small">S</option>
                             <option value="medium">M</option>
                             <option value="large">L</option>
                         </select>
-                        <label for="Antall">Antall</label>
-                        <input label="Antall" type="number", min="1">
+                        
+                        
+                        
+                        <input type="number">
                     </form>
                     <form>
                       
                        
                     </form>
-                    <ul id="button-list">
+                    <ul class="button-list">
                         <li>
                             <button><i class="fa-regular fa-heart"></i></button>
                         </li>
@@ -99,21 +96,21 @@
                         <li>Farge: beige</li>
                     </ul>
                     <form>
-                        <label for="Størrelse">Størrelse</label>
+                        
                         <select name="size" >
                            
                             <option value="small">S</option>
                             <option value="medium">M</option>
                             <option value="large">L</option>
                         </select>
-                        <label for="Antall">Antall</label>
-                        <input label="Antall" type="number", min="1">
+                        
+                        <input type="number" min="1">
                     </form>
                     <form>
                       
                        
                     </form>
-                    <ul id="button-list">
+                    <ul class="button-list">
                         <li>
                             <button><i class="fa-regular fa-heart"></i></button>
                         </li>
@@ -129,21 +126,21 @@
                         <li>Farge: beige</li>
                     </ul>
                     <form>
-                        <label for="Størrelse">Størrelse</label>
+                        
                         <select name="size" >
                            
                             <option value="small">S</option>
                             <option value="medium">M</option>
                             <option value="large">L</option>
                         </select>
-                        <label for="Antall">Antall</label>
-                        <input label="Antall" type="number", min="1">
+                       
+                        <input  type="number" min="1">
                     </form>
                     <form>
                       
                        
                     </form>
-                    <ul id="button-list">
+                    <ul class="button-list">
                         <li>
                             <button><i class="fa-regular fa-heart"></i></button>
                         </li>
@@ -156,26 +153,100 @@
                 <section id="opplysninger"> 
                     <h2>2. DINE OPPLYSNINGER</h2>
                     <form>
-                        <label for="Fornavn">Fornvn</label>
+                        
+                        <ul>
+                            <li>Leveringsadresse</li>
+                            <li>Fornavn</li>
+                            <li><input type="text" placeholder="Nora*" class="num-text-box"></li>
+                            <li>Etternavn</li>
+                            <li><input type="text" placeholder="Nordman*" class="num-text-box"></li>
+                            <li>Gateadresse</li>
+                            <li><input type="text" placeholder="BRA veien 4*" class="num-text-box"></li>
+                            <li>Postnummer</li>
+                            <li><input type="text" placeholder="1752*" class="num-text-box"></li>
+                            <li>Poststed</li>
+                            <li><input type="text" placeholder="Halden*" class="num-text-box"></li>
+                        </ul>
 
 
+                        <ul>
+                            <li>Kontaktinformasjon E-post</li>
+                            <li><input type="text" placeholder="Noranordman@hiof.no*" class="num-text-box"></li>
+                            <li>Telefon</li>
+                            <li><input type="text" placeholder="+4749****018*" class="num-text-box"></li>
+                        </ul>
+                        <input type="submit" value="Lagre" class="graybutton">
+                        <input type="reset" value="Avbryt" id="avbryt">
                     </form>
+                </section>
                 
                    
-                </section>
-
+              
 
 
                 <section id="levering">
                     <h2>3. Levering</h2>
-                    
+                    <h3>Leveringsvalg</h3>
+                    <form>
+                        <ul>
+                            <li class="bold"><input type="radio"> Express Hjemlevering</li>
+                            <li class="gray">3-4 Virkedager</li>
+                            <li>59kr <i class="fa-solid fa-truck-fast"></i></li>
+                            <li><p>At vero eos et accusamus et iusto odio dignissimos ducimus  corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p></li>
+                        </ul>
+                        
+                        <ul>
+                            <li class="bold"><input type="radio"> Express Pakke til utlvervingsted</li>
+                            <li class="gray">1-3 Virkedager</li>
+                            <li>59kr </li>
+                        
+                        </ul>
+
+                        <ul>
+                            <li class="bold"><input type="radio"> Standard Hjemlevering</li>
+                            <li class="gray">5-8 Virkedager</li>
+                            <li>59kr <i class="fa-solid fa-box"></i></li>
+                            <li><p>At vero eos et accusamus et iusto odio dignissimos ti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p></li>
+                        </ul>
+
+
+                    </form>
+                </section>
                 
-                    <section id="betaling">
+                <section id="betaling">
                     <h2>4. Betaling</h2>
+                    
+                    <form>
+                        <ul>
+                            <li class="bold">BETAL MED KORT <i class="fa-solid fa-credit-card"></i></li>
+                            <li>Kortnummer</li>
+                            <li><input type="number" placeholder="34342****4435" class="num-text-box"></li>
+                            <li>Utløpsdato</li>
+                            <li><input type="date" class="num-text-box"></li>
+                            <li>CVV/CVC</li>
+                            <li><input type="text" class="num-text-box"></li>
+                            
+                        </ul>
+                        
+                        <ul class="text-middle">
+                            <li >Å betale inkl. mva.</li>
+                            <li class="bold">1 999 kr</li>
+                            <li><input type="submit" value="Fullfør kjøp" class="graybutton"></li>
+                            <li class="text-middle">At vero eos et accusamus et iusto odio dignissimos ti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</li>
+                            <li class="text-middle"><input type="checkbox"> Ja takk! Send nyhetsbrev til meg.</li>
+                            <li class="text-middle"><input type="checkbox">Jeg ønsker å motta tilbakemeldinger og tilbud om nyheter</li>
+
+
+                            
+                        </ul>
+
+
+                    </form>
+
+
 
 
                 </section>
-       
        
         </main>
 
