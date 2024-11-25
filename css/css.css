@@ -25,7 +25,11 @@ header {
         
         min-width: 100%;
 
-        
+        #magnifying-glass{
+            position: relative;
+            left:14.5rem;
+            top:0.1rem;
+        }
         
         
 
@@ -886,11 +890,8 @@ ul{
 
 
 
-@media only screen and (min-width:500px){
-}
 
-
-
+ /*Desktopversjon av index siden*/
 @media only screen and (min-width:1000px){
    
     #index,#produkt-side{
@@ -940,7 +941,7 @@ ul{
                 gap: 2rem;
                 
                 a:hover{
-                    text-decoration: underline;
+                    text-decoration:underline;
                 }
             }
             }
@@ -950,7 +951,7 @@ ul{
 
 
 
-    /*Desktopversjon av index siden*/
+   
     #index{
         
         
@@ -1191,9 +1192,98 @@ ul{
 
     }
     
+    #produkt-side{
+
+
+        max-width: 1080px;
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            gap:1rem;
+            justify-content: space-between;
+            nav{
+                min-width: 100%;
+            }
+       
+            #produkt-bilder{
+                max-width: 40%;
+                
+                #img1{
+                   
+                    width:9.8rem;
+                    height:12.6rem;
+                    margin-bottom:1.1rem;
+                }
+                
+                #img2{
+                    width:9.8rem;
+                    height:12.6rem;
+                    margin-bottom:1.1rem;
+                    
+                 }
+                 #img3{
+                    
+                    
+                    width:9.8rem;
+                    height:12.6rem;
+                
+                }
+                
+                #img4{
+                    
+                    max-width:26rem;
+                    height:40rem;  
+                 }
+            }
+            #produkt-oversikt{
+                max-width: 40%;
+            }
+            #lignende-produkter{
+                min-width: 100%;
+            }
+        
+        
+        
+        
+
+    }
+}
     
+    #handlekurv{
+        
+        
+        max-width: 1000px;
+        margin-left: 10%;
+        
+        
+        
+        #shoppingbagen_din{
+            display: flex;
+            flex-wrap: wrap;
+            gap:1rem;
+            padding:2rem;
+            max-width: 1000px;
+
+            form{
+                max-width: 40%;
+            }
+
+
+            .button-list{
+                display: block;
+            }
+        
+        }
+
+
+
+    }
     
+  
+    footer{
+        
+        margin-left:0px;
+        margin-right:0px;
     
-    
-   
+    }
 }
