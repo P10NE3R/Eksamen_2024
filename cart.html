@@ -30,22 +30,22 @@
                             <a href="product.html">Produkter</a>
                         </li>
                         <li>
-                            <a class="logo" href="#">Logo</a>
+                            <a class="logo" href="index.html">Logo</a>
                         </li>
                         <li>
-                            <a href="footer">Om oss</a>
+                            <a href="index.html#kategorier">Kategorier</a>
                         </li>
                         <li>
-                            <a href="#">Kontakt oss</a>
+                            <a href="#tilgang">Kontakt oss</a>
                         </li>
-                    </ul>
+                    </ul> 
                     <ul id="nav-icons">
                         <li><i class="fa-regular fa-user"></i></li>
                         <li><i class="fa-regular fa-heart"></i></li>
                         <li><a href="cart.html"><i id="cart" class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </nav>
-            </header>
+        </header>
                 
             <main id="handlekurv">
                     <header>
@@ -58,11 +58,13 @@
                     <section id="shoppingbagen_din">
                         
                         
+                        <header>
+                            <h2>1.SHOPPINGBAGEN DIN</h2>
+                        </header>
                         
-                        <h2>1.SHOPPINGBAGEN DIN</h2>
                        
                         <article>
-                                <img src="bilder/leaf.jpg" alt="product">
+                            <img  src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
                                 
                                 <ul>
                                     <li><h3>PODUCT NAME</h3></li>
@@ -98,6 +100,82 @@
                                 </li>
                             </ul>
                         </article>
+
+                        <article>
+                            <img  src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+                            
+                            <ul>
+                                <li><h3>PODUCT NAME</h3></li>
+                                <li>Kr 1999</li>
+                                <li>Farge: beige</li>
+                            </ul>
+                            <form>
+                                
+                                
+                                
+                            <ul class="amount-and-size">
+                                <li>Størrelse</li>
+                                <li>
+                                    <select name="size" >
+                            
+                                        <option value="small">S</option>
+                                        <option value="medium">M</option>
+                                        <option value="large">L</option>
+                                    </select>
+                                </li>
+                                <li>Antall</li>
+                                <li> <input type="number"></li>
+                        
+                            </ul>
+                        </form>
+                        
+                        <ul class="button-list">
+                            <li>
+                                <button><i class="fa-regular fa-heart"></i></button>
+                            </li>
+                            <li>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <img  src="https://cdn.pixabay.com/photo/2023/08/25/07/37/shoes-8212405_960_720.jpg" alt="">
+                        
+                        <ul>
+                            <li><h3>PODUCT NAME</h3></li>
+                            <li>Kr 1 999</li>
+                            <li>Farge: beige</li>
+                        </ul>
+                        <form>
+                            
+                            
+                            
+                        <ul class="amount-and-size">
+                            <li>Størrelse</li>
+                            <li>
+                                <select name="size" >
+                        
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                </select>
+                            </li>
+                            <li>Antall</li>
+                            <li> <input type="number"></li>
+                    
+                        </ul>
+                    </form>
+                    
+                    <ul class="button-list">
+                        <li>
+                            <button><i class="fa-regular fa-heart"></i></button>
+                        </li>
+                        <li>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </li>
+                    </ul>
+                </article>
                         
 
 
@@ -105,21 +183,55 @@
 
                     </section>
                     <section id="opplysninger"> 
-                        <h2>2. DINE OPPLYSNINGER</h2>
+                        <header>
+                            <h2>2. DINE OPPLYSNINGER</h2>
+                        </header>
                         <form>
                             
+                            
+
                             <ul>
                                 <li>Leveringsadresse</li>
-                                <li>Fornavn</li>
-                                <li><input type="text" placeholder="Nora*" class="num-text-box"></li>
-                                <li>Etternavn</li>
-                                <li><input type="text" placeholder="Nordmann*" class="num-text-box"></li>
+                                
+                                
+                                <li>
+                                   <ul class="nestet-liste">
+                                        <li>
+                                            <ul class="nestetliste1">
+                                                <li>Fornavn</li>
+                                                <li><input type="text" placeholder="Nora*" class="num-text-box"></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="nestetliste2">
+                                                <li>Etternavn</li>
+                                                <li><input type="text" placeholder="Nordmann*" class="num-text-box"></li>
+                                            </ul>
+                                        </li>
+                                    </ul> 
+                                </li>
+                               
+                               
                                 <li>Gateadresse</li>
                                 <li><input type="text" placeholder="BRA veien 4*" class="num-text-box"></li>
-                                <li>Postnummer</li>
-                                <li><input type="text" placeholder="1752*" class="num-text-box"></li>
-                                <li>Poststed</li>
-                                <li><input type="text" placeholder="Halden*" class="num-text-box"></li>
+                                
+                                <li>
+                                    <ul class="nestet-liste">
+                                        <li>
+                                            <ul class="nestetliste1">
+                                                <li>Postnummer</li>
+                                                <li><input type="text" placeholder="1752*" class="num-text-box"></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <ul class="nestetliste2">
+                                                <li>Poststed</li>
+                                                <li><input type="text" placeholder="Halden*" class="num-text-box"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>          
+                                </li>
                             </ul>
 
 
@@ -139,28 +251,49 @@
 
 
                     <section id="levering">
-                        <h2>3. Levering</h2>
-                        <h3>Leveringsvalg</h3>
+                        <header>
+                            <h2>3. Levering</h2>
+                            <h3>Leveringsvalg</h3>
+                        </header>
+                        
+                        
                         <form>
-                            <ul>
-                                <li class="bold"><input type="radio"> Express Hjemlevering</li>
-                                <li class="gray">3-4 Virkedager</li>
+                            <ul class="levering-liste">
+                                <li>
+                                    <ul>
+                                        <li class="bold"><input type="radio"> Express Hjemlevering</li>
+                                        <li class="gray">3-4 Virkedager</li>
+                                    </ul>
+                                </li>
+                                
+                                
                                 <li>59kr <i class="fa-solid fa-truck-fast"></i></li>
                                 <li><p>At vero eos et accusamus et iusto odio dignissimos ducimus  corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p></li>
                             </ul>
                             
-                            <ul>
-                                <li class="bold"><input type="radio"> Express Pakke til utlvervingsted</li>
-                                <li class="gray">1-3 Virkedager</li>
-                                <li>59kr </li>
+                            <ul class="levering-liste">
+                                <li>
+                                    <ul>
+                                        <li class="bold"><input type="radio"> Express Pakke til utlvervingsted</li>
+                                        <li class="gray">1-3 Virkedager</li>
+                                    </ul>
+                                </li>
+                                
+                               
+                                <li class="pakke-pris">59kr <i class="fab fa-dhl"></i></li>
                             
                             </ul>
 
-                            <ul>
-                                <li class="bold"><input type="radio"> Standard Hjemlevering</li>
-                                <li class="gray">5-8 Virkedager</li>
-                                <li>59kr <i class="fa-solid fa-box"></i></li>
-                                <li><p>At vero eos et accusamus et iusto odio dignissimos ti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p></li>
+                            <ul class="levering-liste">
+                                <li>
+                                    <ul>
+                                        <li class="bold"><input type="radio"> Standard Hjemlevering</li>
+                                        <li class="gray">5-8 Virkedager</li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="pakke-pris">59kr <i class="fa-solid fa-box"></i></li>
+                                <li class="levering-tekst"><p>At vero eos et accusamus et iusto odio dignissimos ti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p></li>
                             </ul>
 
 
@@ -168,23 +301,41 @@
                     </section>
                     
                     <section id="betaling">
-                        <h2>4. Betaling</h2>
+                        <header>
+                            <h2>4. Betaling</h2>
+                        </header>
+                        
                         
                         <form>
-                            <ul>
-                                <li class="bold">BETAL MED KORT <i class="fa-solid fa-credit-card"></i></li>
-                                <li>Kortnummer</li>
-                                <li><input type="number" placeholder="34342****4435" class="num-text-box"></li>
-                                <li>Utløpsdato</li>
-                                <li><input type="date" class="num-text-box"></li>
-                                <li>CVV/CVC</li>
-                                <li><input type="text" class="num-text-box" placeholder="CVV/CVC"></li>
-                                
-                            </ul>
                             
+                            <ul>
+                                    <li class="bold">BETAL MED KORT <i class="fa-solid fa-credit-card"></i></li>
+                                    <li>Kortnummer</li>
+                                    <li><input type="number" placeholder="34342****4435" class="num-text-box"></li>
+                                
+                                <li>   
+                                    <ul class="nestet-liste">
+                                        <li>
+                                            <ul class="nestetliste1">
+                                                <li>Utløpsdato</li>
+                                                <li><input type="date" class="num-text-box"></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <ul class="nestetliste2">
+                                                <li>CVV/CVC</li>
+                                                <li><input type="text" class="num-text-box" placeholder="CVV/CVC"></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                
+                                </li> 
+                            </ul> 
                             <ul class="text-middle">
                                 <li >Å betale inkl. mva.</li>
-                                <li class="bold">1 99 kr</li>
+                                <li class="bold">1 999kr</li>
                                 <li><input type="submit" value="Fullfør kjøp" class="graybutton"></li>
                                 <li class="text-middle">At vero eos et accusamus et iusto odio dignissimos ti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</li>
                                 <li class="text-middle"><input type="checkbox"> Ja takk! Send nyhetsbrev til meg.</li>
