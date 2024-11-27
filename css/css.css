@@ -567,6 +567,17 @@ ul{
 
 #handlekurv{
     max-width: 450px;
+    
+    ul{
+        padding-left:0px;
+        margin-left:0px;
+
+        li{
+            padding-left:0px;
+        margin-left:0px;
+
+        }
+    }
     .gray{
         color: gray;
         font-weight: bold;
@@ -587,6 +598,7 @@ ul{
     }
     .text-middle{
         text-align: center;
+       
     }
 
     .num-text-box{
@@ -646,12 +658,14 @@ ul{
 
             select{
                     max-width:16%;
-                    background-color: gray;
+                    background-color:rgb(224, 224, 224);
                     padding:1rem;
+                    border: none;
                 }
             input{
                     max-width:16%;
                    padding:1rem;
+                   border: solid rgb(224, 224, 224) 1px;
                 }
             
 
@@ -700,6 +714,7 @@ ul{
             .levering-liste{
                 ul{
                     border: none;
+                    padding: 0px;
                 }
                 
             }
@@ -718,7 +733,7 @@ ul{
             
 
             li{
-                padding:0.2rem;
+                padding-bottom:0.3rem;
                 
                 
                    
@@ -1141,7 +1156,9 @@ ul{
 
                    
                     h2{
+                       
                         grid-row: 1/2;
+                        max-width: 50%;
                     }
                     p{
                         grid-row: 2/3;grid-row: 2/3;
@@ -1155,6 +1172,7 @@ ul{
                         max-width: fit-content;
                     }
                 }
+                
                 
                 
                 #slider1{
@@ -1781,7 +1799,15 @@ ul{
         }
         
        
-
+        #betaling{
+            
+            ul{
+                li{
+                    padding-bottom: 0.5rem;
+                }
+                
+            }
+        }
 
        
     }
