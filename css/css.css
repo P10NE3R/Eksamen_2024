@@ -202,6 +202,7 @@ ul{
 
 
 #index{
+    
     #banner{
         position: relative;
         max-width: 100%;
@@ -374,7 +375,7 @@ ul{
                 background-color:rgb(229 229 229 / 50%);
                 border-radius: 20rem;
                 border: 0px;
-                left:23.6rem; 
+                left:88%; 
                 top:3.3rem; 
                   
                     i{
@@ -475,14 +476,14 @@ ul{
                 text-align:center;
             }
             #category2{
-                height: 22rem;
+                height:15.7rem;
                 align-content: center;
                 text-align:center;
                 background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
             }
         
             #category3{
-                height: 27.4rem;
+                height: 15.7rem;
                 background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
                 align-content: center;
                 text-align:center;
@@ -566,7 +567,7 @@ ul{
 
 
 #handlekurv{
-    max-width: 450px;
+    width: 450px;
     
     ul{
         padding-left:0px;
@@ -1052,74 +1053,71 @@ ul{
 
 
 
+/*Størrelse tilpasset for brett*/
 
-
-@media only screen and (max-width:900px){
+@media only screen and (min-width:700px) and (max-width:990px){
+    
     #index{
+       
+        #produkter{
+            max-width: 640px;    
+            margin: auto;
+
+            
+       }
+
+
         #kategorier{
-            display: block;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0.5fr 1fr 1fr ;
-
-            header{
-                width: 100%;
-                grid-column:1/4 ;
-                grid-row: 1/2;
             
+            #category-container{
+                display: block;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                
+                #category1{
+                    grid-column: 1/2;
+                }
         
-        
-        #category1{
-            grid-column: 1/2;
-            grid-row: 2/3;
-            height: auto;
-            background-image: url("https://cdn.pixabay.com/photo/2023/07/08/07/24/ai-generated-8113881_1280.jpg");
-            background:fill ;
-            align-content: center;
-            text-align:center;
-        }
-
-        #category2{
-            grid-column: 2/3;
-            grid-row: 2/3;
+                #category2{
+                    grid-column:2/3;
+                }
             
-            align-content: center;
-            text-align:center;
-            background-image: url("https://cdn.pixabay.com/photo/2012/03/02/12/43/clockwork-21254_1280.jpg");
-            background: fill;
-        }
-    
-        #category3{
-            grid-column: 3/4;
-            grid-row: 2/3;
-            background-image: url("https://cdn.pixabay.com/photo/2024/05/19/08/39/work-8772016_1280.jpg");
-            height: auto;
-            align-content: center;
-            text-align:center;
+                #category3{
+                    grid-column: 3/4;
+                }
             
-        }
-    
-        #category4{
-            grid-column: 1/2;
-            grid-row:3/4 ;
-            height: auto;
-            align-content: center;
-            text-align:center;
-            background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg");
-        }
-    
-        #category5{
-            grid-column: 3/4;
-            grid-row: 3/4;
-            align-content: center;
-            text-align:center;
-            height: auto;
-            background-image: url("https://cdn.pixabay.com/photo/2014/09/07/22/15/industry-438428_1280.jpg");
-        }
+                #category4{   
+                    grid-column: 4/5
+                }
+            
+                #category5{
+                    grid-column: 5/6;
+                }
+            } 
     }
 }
+
+#handlekurv{
+    width: 700px;
+    margin: auto;
 }
+
+
+#produkt-side{
+    #produkt-oversikt{
+        form{
+            input{
+                width: 90%;
+            }
+            
+        }
+        
+    }
+    
 }
+
+}
+
 
 
 
@@ -1750,6 +1748,7 @@ ul{
     
     #handlekurv{
        max-width: 1200px;
+       min-width:1200px ;
         #opplysninger, #shoppingbagen_din , #levering, #betaling {
             display: flex;
             flex-wrap: wrap;
